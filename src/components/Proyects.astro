@@ -1,48 +1,63 @@
 ---
-import HTML5Icon from './icons/Html5.astro'
-import CSSIcon from './icons/Css.astro'
-import JavaScriptIcon from './icons/JavaScript.astro'
+import HTML5Icon from "./icons/Html5.astro";
+import CSSIcon from "./icons/Css.astro";
+import JavaScriptIcon from "./icons/JavaScript.astro";
+import projects from "../data/projects.json";
+import { promise } from "astro:schema";
 
 const TAGS = {
-   HTML:{
-    name:'HTML',
-    class:'bg-[#e35026]/70 text-white',
-    icon: HTML5Icon
-   },
-   CSS:{
-    name:'CSS',
-    class:'bg-[#0b73b8]/70 text-white',
-    icon:CSSIcon
-   },
-   JavaScript:{
-    name:'JavaScript',
-    class:'bg-[#efdb50]/70 text-white',
-    icon:JavaScriptIcon
-   }
-}
+    HTML: {
+        name: "HTML",
+        class: "bg-[#e35026]/70 text-white",
+        icon: HTML5Icon,
+    },
+    CSS: {
+        name: "CSS",
+        class: "bg-[#0b73b8]/70 text-white",
+        icon: CSSIcon,
+    },
+    JavaScript: {
+        name: "JavaScript",
+        class: "bg-[#efdb50]/70 text-white",
+        icon: JavaScriptIcon,
+    },
+};
+
 const PROJECTS = [
     {
-        title:'Tabler Icons',
-        description: 'Web que proporciona una coleccion de iconos para tus proyectos web',
-        link: 'https://tabler.io/icons',
-        github:'https://github.com/tabler/tabler-icons',
-        image:'/projects/tabler-icons.webp',
-        tags:[TAGS.HTML, TAGS.CSS, TAGS.JavaScript]
-    }
-]
+        title: "Tabler Icons",
+        description:
+            "Web que proporciona una coleccion de iconos para tus proyectos web",
+        link: "https://tabler.io/icons",
+        github: "https://github.com/tabler/tabler-icons",
+        image: "/projects/tabler-icons.webp",
+        tags: [TAGS.HTML, TAGS.CSS, TAGS.JavaScript],
+    },
+];
 ---
+
 {
-    PROJECTS.map(({title, description, tags,image})=>(
+    PROJECTS.map(({ title, description, tags, image }) => (
         <article>
             <h3 class="text-2xl font-semibold text-yellow-200 mb-2">{title}</h3>
-            <p class="text-lg mb-4 text-pretty">{description}</p>
-            <ul class="flex gap-x-4 flex-row mb-2">{tags.map(tag=><li>
-               <span class={`flex gap-x-2 rounded-full text-xs ${tag.class} py-1 px-2`}>
-                    <tag.icon class="size-4" />
-                    {tag.name}
-               </span>
-                </li>)}</ul>
-            <img class="rounded shadow-2xl shadow-white/10" src={image} alt={`Captura de pantalla del proyecto ${image}`} />
+            <p class="text-lg mb-4 text-pretty text-white">{description}</p>
+            <ul class="flex gap-x-4 flex-row mb-2">
+                {tags.map((tag) => (
+                    <li>
+                        <span
+                            class={`flex gap-x-2 rounded-full text-xs ${tag.class} py-1 px-2`}
+                        >
+                            <tag.icon class="size-4" />
+                            {tag.name}
+                        </span>
+                    </li>
+                ))}
+            </ul>
+            <img
+                class="rounded shadow-2xl shadow-white/10"
+                src={image}
+                alt={`Captura de pantalla del proyecto ${image}`}
+            />
         </article>
     ))
 }

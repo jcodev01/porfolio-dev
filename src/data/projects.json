@@ -1,0 +1,14 @@
+[
+    {
+        "title": "Tabler Icons",
+        "description": "Web que proporciona una coleccion de iconos para tus proyectos web",
+        "link": "https://tabler.io/icons",
+        "github": "https://github.com/tabler/tabler-icons",
+        "image": "/projects/tabler-icons.webp",
+        "tags": [
+            "HTML",
+            "CSS",
+            "JAVASCRIPT"
+        ]
+    }
+]

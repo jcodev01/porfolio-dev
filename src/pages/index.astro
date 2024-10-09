@@ -1,6 +1,6 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import Badge from '../components/Badge.astro';
+import IntroPresentation from '../components/IntroPresentation.astro';
 import LinkedinIcon from '../components/icons/Linkedin.astro';
 import SocialPill from '../components/SocialPill.astro';
 import MailIcon from '../components/icons/Mail.astro'
@@ -13,18 +13,9 @@ import CodeIcon from '../components/icons/Code.astro';
 
 <Layout title="Porfolio de José Camacho - Desarrollador y Programador Web" description="">
 	<main class="px-4">
-		<SectionContainer class="py-44">
-			<img class="rounded-full size-24 mb-4" src="https://img.freepik.com/fotos-premium/avatar-digital-analista-negocios-ia-generativa_934475-9299.jpg" alt="jcodev01 foto"/>
-		<h1 class="text-white text-3xl md:text-4xl lg:text-5xl font-bold flex flex-row gap-x-4 pb-6 lg:pb-10">Hey, soy José Camacho <a 
-			href="https://www.linkedin.com/in/jcodev01/"
-			target="_blank"
-			rel="noopener"
-			 class="flex justify-center items-center"><Badge>Disponible para trabajar</Badge></a></h1>
-		<h2 class="text-xl lg:text-2xl text-wrap max-w-[700px]"><span>+10 años de experiencia</span>
-			<span class=" opacity-80 text-yellow-200/90">en el área de desarrollo web y móvil.</span>
-			De Guayaquil, Ecuador 🇪🇨. Especializado en crear aplicaciones únicas.</h2>
-
-		<nav class="flex gap-4 mt-5 flex-wrap">
+	<SectionContainer class="py-44" id="sobre-mi">
+		<IntroPresentation />
+		<nav class="flex gap-4 mt-5 flex-wrap text-white">
 			<SocialPill href="https://www.linkedin.com/in/jcodev01/">
 				<LinkedinIcon class="size-4 md:size-6" />
 				Linkedin
@@ -36,14 +27,14 @@ import CodeIcon from '../components/icons/Code.astro';
 		</nav>
 	</SectionContainer>
 	<SectionContainer id="experiencia">
-		<h2 class="text-2xl font-semibold mb-6 flex gap-x-3 items-center">
+		<h2 class="text-2xl font-semibold mb-6 flex gap-x-3 items-center text-white">
 			<LaptopIcon class="size-8"/>
 			Experiencia Laboral
 		</h2>
 		<Experience />
 	</SectionContainer>
 	<SectionContainer id="proyectos">
-		<h2 class="text-2xl font-semibold mb-6 flex gap-x-3 items-center">
+		<h2 class="text-2xl font-semibold mb-6 flex gap-x-3 items-center text-white">
 			<CodeIcon class="size-8"/>
 			Proyectos
 		</h2>

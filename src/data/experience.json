@@ -1,0 +1,47 @@
+[
+    {
+        "date": "Abril 2022 - Actual",
+        "title": "Tech Lead Developer",
+        "company": "Grupo Transoceánica",
+        "descriptions": [
+            "Participo activamente en el desarrollo de software para implementar nuevas características y mejoras en los aplicativos.",
+            "Lidero equipos técnicos para el mantenimiento y/o mejora continua de aplicativos de proyectos web y móviles brindando mentoría técnica, gestionando la infraestructura tecnológica adecuada y supervisando el desarrollo de soluciones web eficaces y escalables."
+        ]
+    },
+    {
+        "date": "Marzo 2021 - Marzo 2022",
+        "title": "Full Stack Developer",
+        "company": "Freelance",
+        "descriptions": [
+            "Desarrollé soluciones a medida para clientes en el ámbito web y móvil, asesorando desde la definición hasta la implementación de los mismos."
+        ]
+    },
+    {
+        "date": "Febrero 2019 - Febrero 2021",
+        "title": "Full Stack Developer",
+        "company": "Skysite",
+        "descriptions": [
+            "Desarrollé aplicaciones web y móviles para nuestros clientes utilizando tecnologías como NodeJs, ReactJs y Android Kotlin.",
+            "Gestioné la infraestructura de los aplicativos mediante servicios en la nube de AWS asegurando alta disponibilidad, escalabilidad y seguridad."
+        ]
+    },
+    {
+        "date": "Enero 2018 - Enero 2019",
+        "title": "Desarrollador y Responsable VUE (Ventanilla Única Ecuatoriana - ECUAPASS)",
+        "company": "Subsecretaría de Calidad e Inocuidad",
+        "descriptions": [
+            "Diseñé soluciones para automatizaciones de procesos relacionados a VUE",
+            "Gestioné la implementación de formularios electrónicos de la entidad en el portal de ECUAPASS-VUE, desde el levantamiento de requerimientos (certificados sanitarios) hasta la implementación en el sistema interno de la entidad BONITASOFT y portal ECUAPASS-VUE",
+            "Realicé soporte técnico a los funcionarios de la entidad."
+        ]
+    },
+    {
+        "date": "Enero 2017 - Diciembre 2017",
+        "title": "Desarrollador VUE (Ventanilla Única Ecuatoriana - ECUAPASS)",
+        "company": "Instituto Público de Investigación de Acuicultura y Pesca IPIAP",
+        "descriptions": [
+            "Diseñé soluciones para automatizaciones de procesos relacionados a VUE",
+            "Desarrollé la implementación de mejoras y nuevos formularios en el sistema interno de la entidad BONITASOFT, además de la documentación de los sistemas y cambios realizados en los mismos."
+        ]
+    }
+]
